@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <title>Babanaa Driver Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+
+  <!-- <style>
+    /* Additional styles for separating flag and input field */
+    .iti {
+        width: 100%;
+    }
+
+    .iti__flag-container {
+        position: absolute;
+        left: 0.5rem; /* Adjust this value to position the flag */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .iti__tel-input {
+        padding-left: 3rem; /* Adjust left padding to make space for flag */
+    }
+</style> -->
+</head>
+<body class="bg-white text-black">
+    <div class="text-center mt-5">
+        <h1 class="text-3xl font-bold text-black"> Babanaa <span class="text-orange-400">Driver</span></h1>
+    </div>
+   <div class="max-w-2xl mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+
+    <div id="step-1" class="form-step mt-6 ">
+        <h2 class="text-2xl font-bold text-center mb-1 mb-4">Signin</h2>
+        <div class="mb-4">
+            <label for="phone" class="block text-sm font-medium">Phone number *</label>
+            <div class="phone-number-input flex">
+              <input type="tel" id="phone" class="w-full mt-1 p-2 border rounded-lg required" placeholder="Enter your phone number" required/>
+            </div>
+            <div id="phone-error" class="text-red-500 text-sm hidden mt-2">
+              Invalid phone number. Please check your input.
+            </div>
+          </div>
+
+       
+        
+
+            <!-- <div class="mb-4">
+                <label for="passwoerd" class="block text-sm font-medium">password *</label>
+                <input type="password" id="password" class="w-full mt-1 p-2 border rounded-lg focus:bg-slate-50" placeholder="Enter your password" />
+                <p id="password-error" required class="text-red-500 text-sm mt-1 hidden">Password must be at least 6 characters, contain a mix of uppercase, lowercase, numbers, and special characters.</p>
+            </div> -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <!-- Utils script for intl-tel-input -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"></script>
+    <script src="signin.js"></script>
+</body>
+</html>

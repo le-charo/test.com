@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="riders.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <title>Document</title>
+</head>
+<body>
+    <title>Babanaa Driver Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div class="bg-slate text-black  dark:">
+    <div class="text-center  mt-5  ">
+        <h1 class="text-3xl font-bold text-black sm:text-3xl md:text-orange-400 text-5xl lg:text-5xl"> Babanaa <span class=" text-orange-400 md:text-black">Driver</span></h1>
+    </div>
+   <div class=" container sm:w-4/5 md:w-3/5 lg:w-2/5 mx-auto mt-10 p-6 sm: w-100  md:p-4 pb-4 bg-slate-50    shadow-lg rounded-lg ">
+    <!-- Header -->
+
+            <!-- Step Indicator --------------------->
+            <div class="mt-6 flex justify-between mb-16 gap-x-6">
+                <div class="w-1/4 border-b-4 border-orange-400 rounded-2xl" id="line-1"></div>
+                <div class="w-1/4 border-b-4 border-gray-300 rounded-2xl" id="line-2"></div>
+                <div class="w-1/4 border-b-4 border-gray-300 rounded-2xl" id="line-3"></div>
+                <div class="w-1/4 border-b-4 border-gray-300 rounded-2xl" id="line-4"></div>
+            </div>
+
+             <form>
+            <!-- Step 1 -------------------------------->
+
+                    <div id="step-1" class="form-step mt-6 ">
+                        <h2 class="text-xl font-bold text-center mb-1 mb-3 sm:text-2xl  md:text-3xl lg;text-3xl ">Personal Information</h2>
+                        <div class="mb-4">
+                            <label for="first-name" class="block text-sm font-medium lg:text-base">First name *</label>
+                            <input type="text" id="first-name" class="w-full mt-1 p-2 border rounded-lg lg:p-3" placeholder="Enter your first name" required/>
+                        </div>
+                        <div class="mb-4">
+                            <label for="last-name" class="block text-sm font-medium lg:text-base ">Last name *</label>
+                            <input type="text" id="last-name" class="w-full mt-1 p-2 border rounded-lg lg:p-3" placeholder="Enter your last name" required/>
+                        </div>
+                        <div class="mb-4">
+                            <label for="Email" class="block text-sm font-medium lg:text-base">Email *</label>
+                            
+                            <input type="email" id="email" class="w-full mt-1 p-2 border rounded-lg lg:p-3" placeholder="Enter your email" required/>
+                        </div>
+
+                        
+                            <!-- <div id="phone-error" class="text-red-500 text-sm hidden mt-2">
+                              Invalid phone <div class="mb-4 ">
+                            <label for="phone" class="block text-sm font-medium  sm:text-sm lg:text-base">Phone number *</label>
+                            <div class="phone-number-input   rounded-lg  ">
+                              <input type="tel" id="phone" class=" mt-1 p-2 border rounded-lg required  w-25 md: bg-green-400" placeholder="Enter your phone number" required/>
+                            </div>
+
+                        </div>number. Please check your input.
+                            </div> -->
+
+                            <div class="mb-4">
+                                <label for="phone" class="block text-sm font-medium sm:text-sm lg:text-base">Phone number *</label>
+                                <div class="relative">
+                                  <input type="tel" id="phone" class="w-full mt-1 p-2 border rounded-lg required" placeholder="Enter your phone number" required />
+                                  <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h4a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h4"></path></svg>
+                                  </div>
+                                </div>
+                              </div>
+
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium lg:text-base">City *</label>
+                            <input type="text" id="city" class="w-full mt-1 p-2 border rounded-lg lg:p-3" placeholder="Enter your city" required/>
+                        </div>
+                        <div class="flex justify-center gap-x-4 mt-4">
+                          <button type="button" class="next-btn mt-4 px-4 py-2 bg-orange-400 text-white rounded-2xl sm:px-6 sm:py-3 lg:text-lg"> Next</button>
+                        </div>
+                        
+                    </div>
+
+                    <!-- step 2 ---------------------------------------------------------------------------------------------->
+
+                    <div id="step-2" class="form-step hidden mt-6">
+                        <h2 class="text-xl font-bold mb-1 mb-3 text-center  sm:text-2xl lg:text-3x">Drivers legal identification</h2>
+
+                        <!-- riders photo section--------------------------------------------------------------- ---->
+                            <div class="mb-6 ">
+                                <h2 class="text-lg font-semibold mb-1 text-black mt-1 mb-3 ">Rider's picture </h2>
+                                <p class="text-base mb-3 text-gray-500  leading-tight "> Please Upload a clear photo of the yourself that meets <br>the following requirments.</p>
+
+                                <ul class="text-sm text-gray-600 list-disc pl-6 text-left mb-4">
+
+                                    <li>Front-facing headshot</li>
+                                    <li>No sunglasses, hats, or filters</li>
+                                    <li>Neutral or light background</li>
+                                    <li>JPG or PNG format, max size 2MB</li>
+
+                                </ul>
+
+                                <input type="file" id="driver-photo" accept="image/png, image/jpeg"  class="hidden"  onchange="validatePhoto(this)"/>
+
+                                <label  for="driver-photo"   class="cursor-pointer bg-gray-500 text-black rounded-2xl px-4 py-2 hover:bg-slate-300  ml-4 " id="">
+
+                                    <span class="text-base font-medium">+Upload photo</span>
+                                    
+                                </label>
+
+                                <div id="photo-preview"  class="mt-4"></div>
+                                <button id="remove-photo" class="mt-2 text-red-500 text-sm hidden" onclick="removePhoto()">Remove Photo</button>
+                            </div> 
+                            
+                            <!-- final step for drivers photo------------------------------------------------------------------------- -->
+
+                            <!-- riders license -------------------------------------------------------------------------------------- -->
+
+                            <div class="mb-9 ">
+                                <h2 class="text-lg font-semibold mb-2 text-black ">Rider's License</h2>
+                                <p class="text-base mb-3 text-gray-500  leading-tight ">
+                                    Please upload a clear image of your driver's license showing the front<br> Make sure the image meets the following requirements:</p>
+
+                                    <ul class="text-sm text-gray-600 list-disc pl-6 text-left mb-4">
+                                        <li>Valid and unexpired</li>
+                                        <li>Clear image, no glare or shadows</li>
+                                        <li>Full view of the license</li>
+                                        <li>front and back</li>
+                                        <li>JPG, PNG, or PDF format, max size 2MB</li>
+                                    </ul>
+
+                                    <input type="file" id="license-photo" accept="image/png, image/jpeg, application/pdf" class="hidden" onchange="validateDocument(this, 'license-preview','remove-license')" />
+
+                                    <label  for="license-photo"  class="cursor-pointer bg-gray-500 text-black rounded-2xl px-4 py-2 hover:bg-slate-300  ml-4 " id="">  
+
+                                        <span class="text-base font-medium">+Upload File</span>
+                                        <!-- <input type="file" class="hidden"/> -->
+                                    </label>
+
+                                <div id="license-preview"  class="mt-4"></div>
+                                <button id="remove-license" class="mt-2 text-red-500 text-sm hidden" onclick="removeDocument('license-preview', 'license-photo', 'remove-license')">Remove Photo</button>
+
+                            </div>
+
+                            <!-- final step  for riders license-------------------------------------------------------------------------- -->
+
+                            <!-- riders identity card ----------------------------------------------------------------------------------- -->
+
+                            <div class="mb-9 ">
+                                <h2 class="text-lg font-semibold mb-2 text-black mb-3 sm:text-2xl lg:text-3x ">Rider's identity card</h2>
+                                <p class="text-base mb-3 text-gray-500  leading-tight ">Please upload a clear image of the first page of your driver's license <br> Make sure the image meets the following requirements:</p>
+
+                                  <ul class="text-sm text-gray-600 list-disc pl-6 text-left mb-4">
+                                        <li>Valid and unexpired</li>
+                                        <li>Clear image, no glare or shadows</li>
+                                        <li>Full view of the license</li>
+                                        <li>front and back</li>
+                                        <li>JPG, PNG, or PDF format, max size 2MB</li>
+                                    </ul>
+
+                                        <input type="file" id="identity-photo" accept="image/png, image/jpeg, application/pdf" class="hidden" onchange="validateDocument(this, 'identity-preview','remove-identity')" />
+
+                                        <label for="identity-photo" class="cursor-pointer bg-gray-500 text-black rounded-2xl px-4 py-2 hover:bg-slate-300  ml-4 " id=""> 
+
+                                            <span class="text-base font-medium">+Upload file</span>
+                                            <!-- <input type="file" class="hidden"/> -->
+                                        </label>
+
+                                <div id="identity-preview"  class="mt-4"></div>
+                                <button id="remove-identity" class="mt-2 text-red-500 text-sm hidden" onclick="removeDocument('identity-preview', 'identity-photo', 'remove-identity')">Remove Document</button>
+                        
+
+                            </div>
+                                
+                        <div class="flex justify-center gap-x-4 mt-4">
+                            <button type="button" class="back-btn mt-4 px-4 py-2 bg-orange-400 text-white rounded-2xl"> back</button>
+                            <button type="button" class="next-btn mt-4 px-4 py-2 bg-orange-400 text-white rounded-2xl"> Next</button>
+                        </div>   
+                        
+                        
+                    </div>
+
+                    <!-- final step for identity card -------------------------------------------------------------------------------------------->
+
+
+
+                    <!-- Step 3 ------------------------------------------------------------------------------------------------------------>
+
+                    <div id="step-2" class="form-step hidden mt-6">
+                     <h2 class="text-xl font-semibold mb-3 sm:text-2xl lg:text-3x">bike  Information</h2>
+                    
+                            <div class="mb-4">
+                                <label for="bike-name" class="block text-sm font-medium">bike name *</label>
+                                    <select id="vehicle-type" class="w-full mt-1 p-2 border rounded-lg" >
+                                        <option>lifan</option>
+                                        <option>sanili</option>
+                                        <option>senke</option>
+                                        <option>bajaj</option>
+                                        <option>Others</option>
+                                        <option>sanili</option>
+                                    </select>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="bike-type" class="block text-sm font-medium">bike Type *</label>
+                                    <select id="vehicle-type" class="w-full mt-1 p-2 border rounded-lg" >
+                                        <option>scooter</option>
+                                        <option>roadster</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-4 ">
+                                    <label for="plate-number" class="block text-sm font-medium">Plate Number *</label>
+                                    <input type="text" id="plate-number" class="w-full mt-1 p-2 border rounded-lg"  placeholder="Enter your plate number" />
+                                </div>
+
+                                <div class="mb-4">
+                                    <h2 class="text-lg font-semibold mb-1 text-black mt-1 mb-3">Bike photo</h2>
+                                    <p class="text-base mb-3 text-gray-500 leading-tight">Please Upload a clear photo of your bike <br>the following requirements.</p>
+                                  
+                                    <ul class="text-sm text-gray-600 list-disc pl-6 text-left mb-10  sm:list-none">
+                                         <li>
+                                            <div class="flex flex-col ">
+                                                <ul class="list-disc list-inside ">
+                                                    <li class="flex items-center lg:flex-col ">
+                                                        <span>the front side of your bike</span>
+                                                        <input type="file" id="front-photo" accept="image/png, image/jpeg" class="hidden" onchange="validatePhoto(this)" />
+                                                        <label for="front-photo" class="cursor-pointer text-black rounded-2xl px-4 py-2 bg-slate-300 ml-4 sm:ml-2">
+                                                            <span class="text-sm font-semibold">+Upload photo</span>
+                                                        </label>
+                                                        <div id="front-photo-preview" class="mt-4 sm:mt-0 sm:ml-4"></div>
+                                                        <button id="front-photo-remove" class="mt-2 text-red-500 text-sm hidden sm:mt-0 sm:ml-4" onclick="removePhoto('front-photo')">Remove Photo</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                         </li>
+                                    
+                                         <li>
+                                            <div class="flex gap-x-2 mt-2 items-center sm:flex-row">
+                                                <ul class="list-disc list-inside sm:list-none">
+                                                    <li class="flex items-center">
+                                                        <span>the back side showing the number plate </span>
+                                                        <input type="file" id="back-photo" accept="image/png, image/jpeg" class="hidden" onchange="validatePhoto(this)" />
+                                                        <label for="back-photo" class="cursor-pointer text-black rounded-2xl px-4 py-2 bg-slate-300 ml-4 sm:ml-2">
+                                                            <span class="text-sm font-semibold">+Upload photo</span>
+                                                        </label>
+                                                        <div id="back-photo-preview" class="mt-4 sm:mt-0 sm:ml-4"></div>
+                                                        <button id="back-photo-remove" class="mt-2 text-red-500 text-sm hidden sm:mt-0 sm:ml-4" onclick="removePhoto('back-photo')">Remove Photo</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                         </li>
+                                         <li>
+                                            <div class="flex gap-x-2 mt-2 items-center sm:flex-row">
+                                                <ul class="list-disc list-inside sm:list-none">
+                                                    <li class="flex items-center">
+                                                        <span>the back side showing the number plate </span>
+                                                        <input type="file" id="back-photo" accept="image/png, image/jpeg" class="hidden" onchange="validatePhoto(this)" />
+                                                        <label for="back-photo" class="cursor-pointer text-black rounded-2xl px-4 py-2 bg-slate-300 ml-4 sm:ml-2">
+                                                            <span class="text-sm font-semibold">+Upload photo</span>
+                                                        </label>
+                                                        <div id="back-photo-preview" class="mt-4 sm:mt-0 sm:ml-4"></div>
+                                                        <button id="back-photo-remove" class="mt-2 text-red-500 text-sm hidden sm:mt-0 sm:ml-4" onclick="removePhoto('back-photo')">Remove Photo</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                        
+                            <div class="flex justify-center gap-x-4 mt-4">
+                                <button type="button" class="back-btn mt-4 px-4 py-2 bg-orange-400 text-white rounded-2xl"> back</button>
+                                <button type="button" class="next-btn mt-4 px-4 py-2 bg-orange-400 text-white rounded-2xl"> Next</button>
+                            </div>   
+                    </div>
+
+                        
+                        <!-- Step 4 ------------------------------------------------------->
+                         
+                        <div id="step-4" class="form-step hidden mt-6   gap-x-4 mt-4 mb-3 sm:text-2xl lg:text-3x">
+
+                            <div class="mb-4">
+                                <label for="passwoerd" class="block text-sm font-medium">password *</label>
+                                <input type="password" id="password" class="w-full mt-1 p-2 border rounded-lg focus:bg-slate-50" placeholder="Enter your password" />
+                                <p id="password-error" required class="text-red-500 text-sm mt-1 hidden">Password must be at least 6 characters, contain a mix of uppercase, lowercase, numbers, and special character.</p>
+                            </div>
+                            <div class="mb-4">
+                                <label for="retype-passwoerd" class="block text-sm font-medium">retype-password *</label>
+                                <input type="retype-password" id="retype-password" class="w-full mt-1 p-2 border rounded-lg focus:bg-slate-100 " placeholder="Enter your password" />
+                                <p id="retype-error" class="text-red-500 text-sm mt-1 hidden">Passwords do not match.</p>
+                            </div>
+
+                            <div class="mb-10">
+                                    <h2 class="text-xl font-semibold">Review and Submit</h2>
+
+                                    <p class="mb-4">Please confirm your details before submitting the form.</p>
+                                    
+                                </div>
+
+                                <div class="flex justify-center gap-x-4 mt-4 ">
+                                    <button type="button" class="back-btn mr-4 px-4 py-2 bg-gray-300 text-black rounded-2xl"> Back</button>
+                                    <button id="submit-btn" type="submit" class="px-4 py-2 bg-green-400 text-white rounded-2xl"> Submit</button>
+                                </div>
+                        </div>
+            </form>
+            
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+   <!-- Utils script for intl-tel-input -->
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js"></script>
+   <script src="riders.js"></script> 
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <script src="https://kit.fontawesome.com/18455f2b09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+    <title>register</title>
+  </head>
+  <body>
+    <!-- Sign-Up Modal -->
+    
+     <div class="container">
+          <div class="form-box">
+             <h2>Sign Up</h2>
+
+              <form> 
+                  <div class="input-group">
+
+                      <div class="input-field">
+                        <i class="fa-solid fa-user"></i> 
+                        <input class="text" type="text" placeholder="fullnames">
+                      </div> 
+                       
+                    
+                      <div class="input-field">
+                           <i class="fa-solid fa-envelope"></i> 
+                           <input class="email" type="email" placeholder="Email">
+                      </div> 
+
+                      <div class="input-field">
+                          <i class="fa-solid fa-phone"></i>
+                          <input class="phone" type="tel" placeholder="phone">
+                      </div> 
+
+                      <div class="input-field">
+                          <i class="fa-solid fa-lock"></i>
+                          <input class="password" type="password" placeholder="password">
+                      </div>
+ 
+                      <div class="input-field">
+                          <i class="fa-solid fa-lock" ></i>
+                          <input class="retype-password" type="password" id="password" placeholder="retype-password">
+                      </div> 
+
+                      
+                    </div>
+                        <div class="btn-field">
+                        <button type="button">submit</button>
+                    
+                  </div>
+                  <p>Lost password,  <a href="#">click here!</a></p>
+                  <p>Already have an account? <a href="signin.html">SignIn</a></p>
+            
+                 <span class="close" id="close-signup">&times;</span>
+           </form>
+         </div>
+        </div>
+    
+
+    <!-- <div id="modal-background" style="display: none;"></div> -->
+
+    --
+    <a href="signin.html" class="cta-button">Get a Ride</a>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script> 
+
+    <script src="logic.js"></script>
+    
+  </body>
+</html>

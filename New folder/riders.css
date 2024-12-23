@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+  }
+  .form-step {
+    transition: opacity 0.3s ease-in-out;
+  }
+  #phone{
+    width: 27vw;
+    
+  }
+  
+  
